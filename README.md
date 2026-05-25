@@ -1,4 +1,4 @@
-# Android Calculator Engine (Advanced Tier)
+# Android Calculator Engine 
 A production-ready, low-latency calculator application built natively using **Kotlin** and **Android Studio**. Designed as an advanced-tier implementation for procedural assessment, this engine bypasses traditional heavyweight third-party expression parsers in favor of a customized, high-efficiency sequential tokenizer.
 
 ---

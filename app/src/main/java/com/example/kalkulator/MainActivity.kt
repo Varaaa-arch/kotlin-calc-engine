@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
 
         setNumberListeners()
         setOperatorListeners()
-        setMemoryListeners()
     }
 
     private fun setNumberListeners() {
@@ -105,29 +104,6 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.btnEqual).setOnClickListener {
             onEqual()
-        }
-    }
-
-    private fun setMemoryListeners() {
-        findViewById<Button>(R.id.btnMC).setOnClickListener {
-            memoryValue = 0.0
-        }
-
-        findViewById<Button>(R.id.btnMR).setOnClickListener {
-            tvResult.text = if (memoryValue % 1 == 0.0) memoryValue.toInt().toString() else memoryValue.toString()
-            lastNumeric = true
-        }
-
-        findViewById<Button>(R.id.btnMPlus).setOnClickListener {
-            try {
-                memoryValue += tvResult.text.toString().toDouble()
-            } catch (e: Exception) {}
-        }
-
-        findViewById<Button>(R.id.btnMMinus).setOnClickListener {
-            try {
-                memoryValue -= tvResult.text.toString().toDouble()
-            } catch (e: Exception) {}
         }
     }
 
